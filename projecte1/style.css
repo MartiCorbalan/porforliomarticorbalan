@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    /*overflow sirve para cortar cualquier cosa que se pase del limite establezido, en este caso 1000px*/
+    overflow: hidden;
+}
+
+.contenedor1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/*******************HEADER*************************/
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav {
+    background-color: gray;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    /*se queda pegado*/
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    /*este transition sirve para cuando bajes o subas el menu no desaparezca o aparezca del tiron, que tarde 0.5 segundos*/
+    transition: ease-in-out 0.5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 90%;
+    /*o 100%*/
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav .logo {
+    height: 80px;
+    margin-left: 10%;
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+    margin:10px 40px 10px 40px;
+    padding: 14px 56px;
+}
+
+.nav .enlaces-header {
+    color: #5d6678;
+    text-decoration: none;
+    /*margin-left: 20px;*/
+    margin:10px 40px 10px 40px;
+}
+
+/***************** qui soc *************************/
+
+
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+    font-size: 60px;
+    padding-bottom: -10px;
+    
+}
+.subtitulo1{
+    text-align: center;
+    color: #9528b1;
+    /*margin-left: -80px;*/
+    font-size: 30px;
+}
+.subtitulo2{
+    
+    color: #9528b1;
+    text-align: center;
+    font-size: 30px;
+}
+.fons-subtitul{
+    background-color: rgb(22, 21, 22);
+    height: 80px;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.contenedor-servicio1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.contenedor-servicio {
+    float: left;
+    width: 50%;
+    background-color: fff;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-servicio img {
+    width: 50%;
+}
+
+.quiensoy-servicio {
+    width: 50%;
+}
+
+.service {
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.n-service {
+    margin-bottom: 7px;
+    color: #9f8ad0;
+}
+
+
