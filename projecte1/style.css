@@ -49,14 +49,11 @@ nav {
     background-color: gray;
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
-    /*se queda pegado*/
     position: fixed;
     top: 0;
-    z-index: 100;
-    /*este transition sirve para cuando bajes o subas el menu no desaparezca o aparezca del tiron, que tarde 0.5 segundos*/
     transition: ease-in-out 0.5s;
+    
 }
 
 .nav {
@@ -85,6 +82,10 @@ nav {
     margin:10px 40px 10px 40px;
     padding: 14px 56px;
 }
+.enlaces-header a{
+    color: #000;
+    font-weight: bold;
+}
 
 .nav .enlaces-header {
     color: #5d6678;
@@ -111,15 +112,15 @@ nav {
     font-size: 30px;
 }
 .subtitulo2{
-    
-    color: #9528b1;
     text-align: center;
+    color: #9528b1;
+    
     font-size: 30px;
 }
 .logo1{
     width: 100px;
     height: 100px;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-bottom: -50px;
 
 }
@@ -165,5 +166,71 @@ nav {
     margin-bottom: 7px;
     color: #9f8ad0;
 }
+.number {
+    display: inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
 
+.fons-subtitul1{
+    background-color: rgb(22, 21, 22);
+    height: 80px;
+    width: 50%;
+    margin-left: 20%;
+}
+
+/************* FOOTER ***********/
+
+footer {
+    background: gray;
+    padding-bottom: 0.1px;
+    height: 150px;
+    /*border: 1px solid #000*/
+    display: flex;
+    
+}
+
+.contact-us{
+    
+    width: 300px;
+    margin-left: 15%;
+   
+}
+
+.brand{
+    margin-top: 10px;
+}
+.brand1{
+    margin-top: 10px;
+}
+
+.createdby{
+    font-size: 12px;
+}
+
+.social-media {
+    width: 50%;
+    margin-left: 40%;
+
+}
+
+
+.social-media-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+}
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+}
 
