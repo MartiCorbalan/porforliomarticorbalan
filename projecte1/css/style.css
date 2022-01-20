@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+.menu{
+    background: gray;
+    color: #fff;
+    height: 70px;
+}
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contenedores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    /*overflow sirve para cortar cualquier cosa que se pase del limite establezido, en este caso 1000px*/
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.contenedor1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/*******************HEADER*************************/
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    
+}
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100% ;
+}
+.menu_link{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+
+.menu_link:hover{
+    background-color: #566a91;
+}
+
+nav {
+    background-color: gray;
+    width: 100%;
+    height: 80px;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 90%;
+    /*o 100%*/
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav .logo {
+    height: 80px;
+    margin-left: 10%;
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+    margin:10px 40px 10px 40px;
+    padding: 14px 56px;
+    
+}
+.enlaces-header a{
+    color: #000;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+.nav .enlaces-header {
+    color: #5d6678;
+    text-decoration: none;
+    /*margin-left: 20px;*/
+    margin:10px 40px 10px 40px;
+}
+
+
+.menu_hamburguer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu_img{
+    display: block;
+    width: 36px;
+}
+
+
+
+/***************** qui soc *************************/
+
+
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+    font-size: 60px;
+    padding-bottom: -10px;
+    
+}
+.subtitulo1{
+    text-align: center;
+    color: #9528b1;
+    /*margin-left: -80px;*/
+    font-size: 30px;
+}
+.subtitulo2{
+    text-align: left;
+    color: #9528b1;
+    margin-left: 70px;
+    font-size: 30px;
+}
+.logo1{
+    width: 80px;
+    height: 150px;
+    margin-left: 80%;
+   margin-bottom: -20%;
+   margin-top: -50px;
+}
+
+.imgdev{
+    margin-bottom: 50%;
+    height: 200px;
+    width: 200px;
+}
+.imgdev1{
+   margin-left: -50%;
+   margin-bottom: -20%;
+   height: 300px;
+}
+.imgdev2{
+    margin-bottom: -90%;
+    margin-left: -50%;
+    height: 150px;
+    width: 230px;
+}
+
+.fons-subtitul{
+    background-color: rgb(22, 21, 22);
+    height: 80px;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.contenedor-servicio1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio {
+    
+    width: 50%;
+    background-color: fff;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.contenedor-servicio img {
+    width: 50%;
+}
+.contenedor-servicio1 img {
+    width: 50%;
+}
+
+.quiensoy-servicio {
+    width: 50%;
+}
+
+.service {
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.n-service {
+    margin-bottom: 7px;
+    color: #9f8ad0;
+}
+.number {
+    display: inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.fons-subtitul1{
+    background-color: rgb(22, 21, 22);
+    height: 80px;
+    width: 50%;
+    margin-left: 20%;
+}
+
+/************* FOOTER ***********/
+
+footer {
+    background: gray;
+    padding-bottom: 0.1px;
+    height: 150px;
+    /*border: 1px solid #000*/
+    display: flex;
+    
+}
+
+.contact-us{
+    
+    width: 300px;
+    margin-left: 15%;
+   
+}
+
+.brand{
+    margin-top: 10px;
+}
+.brand1{
+    margin-top: 10px;
+}
+
+.createdby{
+    font-size: 12px;
+}
+
+.social-media {
+    width: 50%;
+    margin-left: 40%;
+
+}
+
+
+.social-media-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+}
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+/********* RESPONSIVE MEDIA QUERY*********/
+
+@media screen and (max-width:800px) {
+
+    .menu_hamburguer{
+        display: flex;
+    }
+    
+
+    .menu_links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+
+    }
+    .menu_link{
+        padding: 25px 0;
+        padding-left: 30px;
+       
+        height: auto;
+    }
+
+    .menu_links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    #quiensoy{
+        width: 100%;
+        height: 1400px;
+    }
+    .subtitulo{
+        font-size: 45px;
+    }
+    .subtitulo1{
+        margin-top: -10%;
+    }
+    .imgdev{
+        margin-left: -10px;
+        margin-bottom: 250px;
+    }
+    .imgdev2{
+      
+        margin-top: 90px;
+    }
+    .fons-subtitul{
+        margin-left: 15%;
+    }
+    .contenedor{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 800px;
+    }
+    .navbar img {
+        width: 400px;
+    }
+    .contenedor-servicio {
+        padding-bottom: 100px;
+        margin-left: 20%;
+    }
+    
+    .contenedor-servicio1 {
+       
+        width: 50%;
+        margin-left: 20%;
+
+    }
+    .quiensoy-servicio {
+        width: 80%;
+    }
+    .qui-soc {
+        margin-bottom: 30px;
+    }
+
+    /***** SKILLS ******/
+    #skills{
+        width: 70%;
+        height: 500px;
+    }
+    #contacte{
+        width: 70%;
+        height: 400px;
+        margin-left: 15%;
+    }
+}
