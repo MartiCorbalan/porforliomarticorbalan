@@ -24,6 +24,7 @@ h6 {
     margin: auto;
     /*overflow sirve para cortar cualquier cosa que se pase del limite establezido, en este caso 1000px*/
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .contenedor1 {
@@ -53,7 +54,8 @@ nav {
     position: fixed;
     top: 0;
     transition: ease-in-out 0.5s;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav {
@@ -81,10 +83,12 @@ nav {
     transition: ease-in-out 0.5s;
     margin:10px 40px 10px 40px;
     padding: 14px 56px;
+    
 }
 .enlaces-header a{
     color: #000;
     font-weight: bold;
+    
 }
 
 .nav .enlaces-header {
@@ -92,6 +96,23 @@ nav {
     text-decoration: none;
     /*margin-left: 20px;*/
     margin:10px 40px 10px 40px;
+}
+
+
+.hamburguer {
+    width: 80px;
+    height: 80px;
+    display: none;
+    /*background-color: #323454;*/
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    /*transition: color 0.5s ease-in;*/
+}
+
+.hamburguer>i {
+    font-size: 25px;
+    line-height: 80px;
 }
 
 /***************** qui soc *************************/
@@ -112,16 +133,17 @@ nav {
     font-size: 30px;
 }
 .subtitulo2{
-    text-align: center;
+    text-align: left;
     color: #9528b1;
-    
+    margin-left: 70px;
     font-size: 30px;
 }
 .logo1{
     width: 100px;
     height: 100px;
-    margin-left: 90px;
-    margin-bottom: -50px;
+    margin-left: 330px;
+    margin-bottom: -80px;
+    padding-top: -30px;
 
 }
 
@@ -137,6 +159,7 @@ nav {
     width: 50%;
     padding: 10px;
     height: 300px;
+    flex-wrap: wrap;
 }
 
 .contenedor-servicio {
@@ -150,6 +173,9 @@ nav {
     flex-wrap: wrap;
 }
 .contenedor-servicio img {
+    width: 50%;
+}
+.contenedor-servicio1 img {
     width: 50%;
 }
 
@@ -235,3 +261,61 @@ footer {
 }
 
 /********* RESPONSIVE MEDIA QUERY*********/
+
+@media screen and (max-width:800px) {
+
+    #quiensoy{
+        
+        width: 100%;
+        height: 1400px;
+    }
+    .subtitulo{
+        font-size: 45px;
+    }
+    .subtitulo1{
+        margin-top: -10%;
+    }
+    .imgdev{
+        margin-left: 550px;
+        margin-bottom: -430px;
+    }
+    .fons-subtitul{
+        margin-left: 15%;
+    }
+    .contenedor{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 800px;
+    }
+    .navbar img {
+        width: 400px;
+    }
+    .contenedor-servicio {
+            width: 50%;
+            height: 720px;
+            margin-top: 15%;
+            margin-left: 15%;
+    }
+    .contenedor-servicio1 {
+       
+       width: 100%;
+        margin-left: 15%;
+    }
+    .quiensoy-servicio {
+        width: 80%;
+    }
+    .qui-soc {
+        margin-bottom: 30px;
+    }
+
+    /***** SKILLS ******/
+    #skills{
+        width: 70%;
+        height: 500px;
+    }
+    #contacte{
+        width: 70%;
+        height: 400px;
+        margin-left: 15%;
+    }
+}
