@@ -65,6 +65,7 @@ h1 {
 }
 
 /*******************HEADER*************************/
+/*
 header::before {
     content: "";
     display: block;
@@ -113,7 +114,7 @@ nav {
     justify-content: space-between;
     height: 80px;
     width: 90%;
-    /*o 100%*/
+  
     align-items: center;
     padding: 0 40px;
 }
@@ -144,7 +145,7 @@ nav {
 .nav .enlaces-header {
     color: #5d6678;
     text-decoration: none;
-    /*margin-left: 20px;*/
+    
     margin:10px 40px 10px 40px;
 }
 
@@ -162,7 +163,7 @@ nav {
     display: block;
     width: 36px;
 }
-
+*/
 
 
 /***************** qui soc *************************/
@@ -333,11 +334,93 @@ footer {
     line-height: 60px;
 }
 
+/*MENU*/
+.nav{
+    background: #293241;
+    height: 80px;
+    color: #fff;
+}
+
+.nav_logo{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.nav_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav_item{
+    color: #fff;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    
+}
+
+.nav_item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+
+.nav_item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav_container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.nav_label, .nav_input{
+    display: none;
+}
+
+
 /********* RESPONSIVE MEDIA QUERY*********/
 
-@media screen and (max-width:800px) {
+@media  (max-width:800px) {
 
-    .menu_hamburguer{
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #f08080;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav_input:checked + .nav_menu{
+        clip-path: circle(100% at center);
+    }
+
+
+    /*.menu_hamburguer{
         display: flex;
     }
     
@@ -365,7 +448,7 @@ footer {
     .menu_links--show{
         transform: unset;
         width: 100%;
-    }
+    }*/
 
     #quiensoy{
         width: 100%;
@@ -508,3 +591,10 @@ footer {
     
 
 }
+
+
+
+
+
+
+
