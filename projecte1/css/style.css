@@ -283,10 +283,16 @@ nav {
 footer {
     background: gray;
     padding-bottom: 0.1px;
-    height: 150px;
+    height: 100%;
     /*border: 1px solid #000*/
     display: flex;
+    width: 100%;
     
+}
+
+.footer1{
+    justify-content: space-between;
+    display: flex;
 }
 
 .contact-us{
@@ -301,6 +307,7 @@ footer {
 }
 .brand1{
     margin-top: 10px;
+    width: 500px;
 }
 
 .createdby{
@@ -308,9 +315,9 @@ footer {
 }
 
 .social-media {
-    width: 50%;
-    margin-left: 40%;
-
+    width: 300px; 
+    margin-left: 850px;
+    
 }
 
 
