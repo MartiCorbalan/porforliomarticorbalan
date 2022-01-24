@@ -1,4 +1,4 @@
-(function(){
+/*(function(){
     const listElements = document.querySelectorAll('.menu_item--show');
     const list = document.querySelector('.menu_links');
     const menu = document.querySelector('.menu_hamburguer');
@@ -35,4 +35,4 @@
   
     menu.addEventListener('click', ()=> list.classList.toggle('menu_links--show'));
   
-  })();
+  })();*/
