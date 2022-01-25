@@ -62,6 +62,7 @@ h6 {
 
 h1 {
     font-size: 50px;
+    color: #fff;
 }
 
 /*******************HEADER*************************/
@@ -71,7 +72,6 @@ header::before {
     display: block;
     margin-bottom: 80px;
 }
-
 .menu_links{
     height: 100%;
     transition: transform .5s;
@@ -91,12 +91,9 @@ header::before {
     height: 100%;
     align-items: center;
 }
-
-
 .menu_link:hover{
     background-color: #566a91;
 }
-
 nav {
     background-color: gray;
     width: 100%;
@@ -108,7 +105,6 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -118,17 +114,14 @@ nav {
     align-items: center;
     padding: 0 40px;
 }
-
 .nav .logo {
     height: 80px;
     margin-left: 10%;
 }
-
 .nav .logo img {
     height: 100%;
     vertical-align: top;
 }
-
 .enlaces-header {
     font-weight: 300;
     transition: ease-in-out 0.5s;
@@ -141,15 +134,12 @@ nav {
     font-weight: bold;
     padding: 0 1em;
 }
-
 .nav .enlaces-header {
     color: #5d6678;
     text-decoration: none;
     
     margin:10px 40px 10px 40px;
 }
-
-
 .menu_hamburguer {
     height: 100%;
     display: flex;
@@ -158,7 +148,6 @@ nav {
     cursor: pointer;
     display: none;
 }
-
 .menu_img{
     display: block;
     width: 36px;
@@ -396,6 +385,9 @@ footer {
 
 @media  (max-width:800px) {
 
+    .nav{
+        width: 100%;
+    }
     .nav_label{
         display: block;
         cursor: pointer;
@@ -406,7 +398,8 @@ footer {
         top: 80px;
         bottom: 0;
         background: #f08080;
-        width: 100%;
+        width: 50%;
+        height: 50%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -420,35 +413,7 @@ footer {
     }
 
 
-    /*.menu_hamburguer{
-        display: flex;
-    }
-    
-
-    .menu_links{
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: #000;
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-
-    }
-    .menu_link{
-        padding: 25px 0;
-        padding-left: 30px;
-       
-        height: auto;
-    }
-
-    .menu_links--show{
-        transform: unset;
-        width: 100%;
-    }*/
+   
 
     #quiensoy{
         width: 100%;
@@ -522,6 +487,14 @@ footer {
 
 
 @media screen and (max-width:600px) {
+    .nav{
+        width: 120%;
+    }
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+
     .contenedor-servicio {
         padding-bottom: 100px;
         margin-left: 10%;
@@ -563,7 +536,7 @@ footer {
        margin-left: 30%;
     }
     .footer{
-        width: 100%;
+        width: 120%;
         position:relative; /*El div será ubicado con relación a la pantalla*/
         left:0px; /*A la derecha deje un espacio de 0px*/
         right:0px; /*A la izquierda deje un espacio de 0px*/
@@ -591,10 +564,3 @@ footer {
     
 
 }
-
-
-
-
-
-
-

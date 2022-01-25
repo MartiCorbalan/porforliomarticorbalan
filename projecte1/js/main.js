@@ -1,14 +1,13 @@
 let prevScrollpos = window.pageYOffset;
-
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
+window.onscroll = function() {
+let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
+    document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("nav").style.top = "-100px";
+    document.getElementById("navbar").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
-};
+}
 
 
 /*let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
