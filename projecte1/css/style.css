@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 h1,
@@ -22,6 +23,9 @@ main{
     width: 100%;
 }
 header{
+    width: 100%;
+}
+.general{
     width: 100%;
 }
 .menu{
@@ -163,7 +167,11 @@ nav {
 
 /***************** qui soc *************************/
 
-
+.qui-soc{
+    word-wrap: break-word;
+    width: 100%;
+    
+}
 .subtitulo {
     text-align: center;
     font-weight: 300;
@@ -184,12 +192,12 @@ nav {
     margin-left: 70px;
     font-size: 30px;
 }
-.logo1{
-    width: 80px;
-    height: 150px;
-    margin-left: 80%;
-   margin-bottom: -20%;
-   margin-top: -50px;
+.logo2{
+    border-radius: 200px;
+    margin: -80px auto 0 200px;
+    align-content: center;
+    width:150px;
+    height:240px;
 }
 
 .imgdev{
@@ -220,7 +228,7 @@ nav {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px;
+    height: 730px;
     flex-wrap: wrap;
 }
 
@@ -232,6 +240,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+   
     
 }
 .contenedor-servicio img {
@@ -303,7 +312,7 @@ footer {
 }
 .brand1{
     margin-top: 10px;
-    width: 500px;
+    
 }
 
 .createdby{
@@ -390,9 +399,15 @@ footer {
 /********* RESPONSIVE MEDIA QUERY*********/
 
 @media  (max-width:800px) {
+    body{
+
+    }
+    header{
+        /* width: 900px; */
+    }
 
     .nav{
-        width: 90%;
+        
     }
     .nav_label{
         display: block;
@@ -453,7 +468,8 @@ footer {
     }
     .contenedor-servicio {
         padding-bottom: 100px;
-        margin-left: 20%;
+        height: 580px;
+        margin: 0px auto 0px 320px;
     }
     
     .contenedor-servicio1 {
@@ -494,6 +510,12 @@ footer {
 
 
 @media screen and (max-width:600px) {
+    body{
+
+    }
+    header{
+
+    }
     .nav{
         width: 100%;
     }
@@ -543,7 +565,7 @@ footer {
        margin-left: 30%;
     }
     .footer{
-        width: 120%;
+        width: 100%;
         position:relative; /*El div será ubicado con relación a la pantalla*/
         left:0px; /*A la derecha deje un espacio de 0px*/
         right:0px; /*A la izquierda deje un espacio de 0px*/
