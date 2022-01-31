@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
+    background-color: #474e5d;
 }
 
 h1,
@@ -18,6 +20,7 @@ h6 {
     color: #1d273b;
     font-weight: 300;
 }
+
 main{
     display: flex;
     width: 100%;
@@ -60,6 +63,7 @@ header{
     /*overflow sirve para cortar cualquier cosa que se pase del limite establezido, en este caso 1000px*/
     overflow: hidden;
     flex-wrap: wrap;
+    
 }
 
 .contenedor1 {
@@ -68,6 +72,7 @@ header{
     margin: auto;
     overflow: hidden;
     padding: 60px 0;
+   background: rgb(163, 137, 137);
 }
 
 h1 {
@@ -192,6 +197,7 @@ nav {
     margin-left: 70px;
     font-size: 30px;
 }
+
 .logo2{
     border-radius: 200px;
     margin: -80px auto 0 200px;
@@ -223,12 +229,23 @@ nav {
     width: 70%;
     margin-left: 10%;
 }
-
+.fons-subtitul2{
+    background-color: rgb(22, 21, 22);
+    height: 80px;
+    width: 35%;
+    margin-left: 30%;
+}
+.fons-subtitul3{
+    background-color: rgb(22, 21, 22);
+    height: 80px;
+    
+    
+}
 .contenedor-servicio1 {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 730px;
+    height: 760px;
     flex-wrap: wrap;
 }
 
@@ -280,7 +297,7 @@ nav {
     background-color: rgb(22, 21, 22);
     height: 80px;
     width: 50%;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 /************* FOOTER ***********/
@@ -387,13 +404,172 @@ footer {
     align-items: center;
 }
 
-
-
-
-
 .nav_label, .nav_input{
     display: none;
 }
+
+
+
+
+/************ QUALIFICATION **************/
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto ;
+
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -5px;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #d07676;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #d07676 transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #d07676;
+    position: relative;
+    border-radius: 6px;
+  }
+
+
+/******** EXPERIENCIA LABORAL ************/
+.about-us {
+    
+}
+
+.contenedor-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    
+    /*space around sirve para dejar espacio entre las cajas o items*/
+    justify-content: space-around;
+}
+
+.articulo {
+    /*como es 30%, solo caben 3 en cada contenedor*/
+    width: 30%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+}
+
+.articulo:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    transition: 0.5s;
+}
+
+.articulo i {
+    font-size: 30px;
+    color: #fff;
+    background: #1fde82;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+.articulo h3 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.articulo p {
+    font-weight: 100;
+    color: #5d6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.articulo a {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.articulo a:hover {
+    color: rgba(11, 54, 33, 0.45);
+    transition: color .5s;
+}
+
+
 
 
 /********* RESPONSIVE MEDIA QUERY*********/
