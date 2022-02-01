@@ -72,7 +72,7 @@ header{
     margin: auto;
     overflow: hidden;
     padding: 60px 0;
-   background: rgb(163, 137, 137);
+  
 }
 
 h1 {
@@ -306,16 +306,29 @@ footer {
     background: gray;
     padding-bottom: 0.1px;
     height: 100%;
-    /*border: 1px solid #000*/
     display: flex;
     width: 100%;
     justify-content: space-around
 }
 
-/* .footer1{
-    justify-content: space-between;
-    display: flex;
-} */
+.formu{
+margin: 0 auto 0 320px;
+}
+.formulari{
+    margin: 2px auto 0 320px;
+    padding-top: 30px;
+}
+.caja-form{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(208, 216, 216);
+    margin: 0 auto 0 40px;
+    border-radius: 10px;
+}
+.caja-form:hover {
+    box-shadow: 0 20px 20px rgba(17, 29, 48, .26);
+    transition: 0.5s;
+}
 
 .contact-us{
     
@@ -360,6 +373,7 @@ footer {
     background: #293241;
     height: 80px;
     color: #fff;
+
 }
 
 .nav_logo{
@@ -393,6 +407,7 @@ footer {
 
 .nav_item:hover{
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    color: cyan;
 }
 
 .nav_container{
@@ -412,7 +427,7 @@ footer {
 
 
 /************ QUALIFICATION **************/
-/* The actual timeline (the vertical ruler) */
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -420,7 +435,7 @@ footer {
 
   }
   
-  /* The actual timeline (the vertical ruler) */
+  /* timeline en vertical */
   .timeline::after {
     content: '';
     position: absolute;
@@ -432,7 +447,7 @@ footer {
     margin-left: -3px;
   }
   
-  /* Container around content */
+  /* Contenedor alrededor del contenido */
   .container1 {
     padding: 10px 40px;
     position: relative;
@@ -440,7 +455,7 @@ footer {
     width: 50%;
   }
   
-  /* The circles on the timeline */
+  /* circulos del timeline */
   .container1::after {
     content: '';
     position: absolute;
@@ -454,17 +469,17 @@ footer {
     z-index: 1;
   }
   
-  /* Place the container to the left */
+  /* lugar del container a la derecha */
   .left {
     left: -5px;
   }
   
-  /* Place the container to the right */
+  /* lugar del container a la izquierda */
   .right {
     left: 50%;
   }
   
-  /* Add arrows to the left container (pointing right) */
+  /*  añade la flecha a la derecha del container */
   .left::before {
     content: " ";
     height: 0;
@@ -478,7 +493,7 @@ footer {
     border-color: transparent transparent transparent #d07676;
   }
   
-  /* Add arrows to the right container (pointing left) */
+  /* añade la flecha a la izquierda del container */
   .right::before {
     content: " ";
     height: 0;
@@ -522,29 +537,19 @@ footer {
 .articulo {
     /*como es 30%, solo caben 3 en cada contenedor*/
     width: 30%;
-    background: #fff;
+    background: rgb(221, 215, 215);
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 45px 30px 60px 30px;
+    
 }
 
 .articulo:hover {
-    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    box-shadow: -10px 10px 20px 20px rgba(17, 29, 48, .26);
     transition: 0.5s;
 }
 
-.articulo i {
-    font-size: 30px;
-    color: #fff;
-    background: #1fde82;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 50%;
-    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
-}
+
 
 .articulo h3 {
     font-size: 24px;
@@ -575,23 +580,25 @@ footer {
 /********* RESPONSIVE MEDIA QUERY*********/
 
 @media  (max-width:800px) {
-    body{
-
-    }
-    header{
-        /* width: 900px; */
-    }
-
-    .nav{
-        
-    }
-    .nav_label{
-        display: block;
-        cursor: pointer;
-       
-    }
-
+    
     .nav_menu{
+        gap: 2em;
+    }
+    
+    .formulari{
+        margin: 0 auto 0 183px;
+    }
+    .formu{
+        margin: 0 auto 0 150px;
+    }
+
+    /* .nav_label{
+        display:block;
+        cursor: pointer;  
+    } */
+
+    /*para poner el menu dentro de la imagen hamburguesa*/
+     /* .nav_menu{
         position: fixed;
         top: 80px;
         bottom: 0;
@@ -605,18 +612,14 @@ footer {
         align-items: center;
         clip-path: circle(0 at center);
         transition: clip-path 1s ease-in-out;
-    }
-    .nav_input:checked + .nav_menu{
+    } */
+    /*cuando pulses el menu, se activara elchecked y su hermano adyacente, es decir el menu*/
+    /* .nav_input:checked + .nav_menu{
         clip-path: circle(100% at center);
-    }
+    }  */
 
 
-   
-
-    #quiensoy{
-        width: 100%;
-        height: 1400px;
-    }
+    
     .subtitulo{
         font-size: 45px;
     }
@@ -637,15 +640,13 @@ footer {
     .contenedor{
         flex-direction: column;
         justify-content: space-evenly;
-        height: 800px;
+        
     }
-    .navbar img {
-        width: 400px;
-    }
+    
     .contenedor-servicio {
         padding-bottom: 100px;
         height: 580px;
-        margin: 0px auto 0px 320px;
+        margin: 0px auto 0px 180px;
     }
     
     .contenedor-servicio1 {
@@ -680,53 +681,62 @@ footer {
     .footer1 .social-media{
         margin-left: 30px;
     }
-
+    .articulo{
+        width: 45%;
+        
+        background: rgb(221, 215, 215);
+    }
     
 }
 
 
 @media screen and (max-width:600px) {
-    body{
 
-    }
-    header{
 
-    }
+    
     .nav{
         width: 100%;
     }
-    .nav_label{
-        display: block;
-        cursor: pointer;
+    .nav_menu{
+        font-size: 12px;
     }
 
-    .contenedor-servicio {
-        padding-bottom: 100px;
-        margin-left: 10%;
-    }
+    /*  .nav_label{
+        display:block;
+        cursor: pointer;  
+    }  */
+
+    /*para poner el menu dentro de la imagen hamburguesa*/
+     /*  .nav_menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #f08080;
+        width: 50%;
+        height: 50%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }  */
+    /*cuando pulses el menu, se activara elchecked y su hermano adyacente, es decir el menu*/
+     /* .nav_input:checked + .nav_menu{
+        clip-path: circle(100% at center);
+    }   */
+
     #quiensoy{
         width: 100%;
         height: 2000px;
     }
-    .subtitulo1{
-        
+    .fons-subtitul1{
+        width: auto;
+        margin: 0;
     }
 
-    .quiensoy-servicio {
-        width: 80%;
-    }
-
-    .imgdev{
-        margin-left: -10px;
-        margin-bottom: 330px;
-    }
-    .imgdev1{
-      
-        margin-top: 175px;
-    }
-    .imgdev2{
-        margin-top: 420px;
-    }
+   
 
     #skills{
         width: 70%;
@@ -758,14 +768,134 @@ footer {
        margin-left: -80px;
         
     }
-    .social-media-icon{
-        
-    }
+   
 
     .footer1{
         width: 100%;
         display: flex;
     }
+    .formu{
+        width: auto;
+        margin: auto;
+        height: auto;
+    }
+    .formulari{
+        width: auto;
+        margin: auto;
+        height: auto;
+    }
+    .logo2{
+        display: none;
+    }
+    .contenedor-servicio{
+        margin: 62px auto 0 20px
+    }
+    .quiensoy-servicio{
+        margin: 0 auto -530px 96px;
+    }
+    .imgdev{
+        margin-left: 150px;
+        display: none;
+    }
+    .imgdev1{
+        display: none;
+    }
+    .imgdev2{
+        display: none;
+    }
+    .articulo{
+        
+        background: rgb(221, 215, 215);
+    }
     
 
+}
+
+@media screen and (max-width:400px) {
+ 
+     .nav_label{
+        display:block;
+        cursor: pointer;  
+    } 
+
+    /*para poner el menu dentro de la imagen hamburguesa*/
+      .nav_menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #f08080;
+        width: 50%;
+        height: 50%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    } 
+    /*cuando pulses el menu, se activara elchecked y su hermano adyacente, es decir el menu*/
+     .nav_input:checked + .nav_menu{
+        clip-path: circle(100% at center);
+    }  
+
+    
+    .fons-subtitul{
+        width: auto;
+        margin: auto;
+    }
+    .logo2{
+        display: none;
+    }
+
+    .contenedor-servicio{
+        margin: 62px auto 0 20px
+    }
+    .quiensoy-servicio{
+        margin: 0 auto -530px 96px;
+    }
+    .imgdev{
+        margin-left: 150px;
+        display: none;
+    }
+    .imgdev1{
+        display: none;
+    }
+    .imgdev2{
+        display: none;
+    }
+
+    .left{
+        width: auto;
+    }
+    .right{
+        width: 100%;
+        margin-left: -206px;
+    }
+    .timeline::after {
+        display: none;
+    }
+    .container1::after {
+        display: none;
+    }
+
+    .fons-subtitul3{
+        width: auto;
+        margin: auto;
+        height: auto;
+    }
+    .articulo{
+        width: auto;
+        background: rgb(221, 215, 215);
+    }
+    .formu{
+        width: auto;
+        margin: auto;
+        height: auto;
+    }
+    .formulari{
+        width: auto;
+        margin: auto;
+        height: auto;
+    }
 }
