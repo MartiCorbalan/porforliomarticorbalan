@@ -676,7 +676,7 @@ margin: 0 auto 0 320px;
     .contenedor-servicio {
         padding-bottom: 100px;
         height: 580px;
-        margin: 0px auto 0px 180px;
+        margin: 0px auto 0px 255px;
     }
     
     .contenedor-servicio1 {
@@ -773,7 +773,7 @@ margin: 0 auto 0 320px;
     #skills{
         width: 70%;
         height: 500px;
-        margin-top: -150px;
+        
     }
     .footer1 .jo{
        
