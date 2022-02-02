@@ -29,7 +29,7 @@
       
               <h1 class="nav_logo"><a href="#">Martí Corbalan</a> </h1>
 <!--este label haga referencia con el for al input de abajo, tienen que ir seguidos-->
-              <label for="menu" class="nav_label">
+              <label for="menu" class="nav_label " id="hamburguer">
                   <img src="../assets/menu.svg" class="nav_img">
               </label>
 <!--una vez das click a este elemento, se activara la pseudoclase checked
@@ -45,21 +45,34 @@
                   <a href="#exp-laboral" class="nav_item">Experiència laboral</a>
                   <a href="#contacte" class="nav_item">Contacte</a>
               </div>
+
+             
     
             </div>  
           </nav>
+          <div class="nav_menu2 menu-hidden">
+            <a href="#quiensoy" class="nav_item">Sobre mi</a>
+            <a href="#skills" class="nav_item">Skills</a>
+            <a href="#qualificacions" class="nav_item">Qualificacions</a>
+            <a href="#exp-laboral" class="nav_item">Experiència laboral</a>
+            <a href="#contacte" class="nav_item">Contacte</a>
+        </div>
     </header>
-    <br>
+    
     <main>
         
-        <section class="contenedor wi" id="quiensoy">
-            <div class="fons-subtitul">
+        <section class="contenedor " id="quiensoy">
+            
+                <br>
+                
+                
+            <div class="fons-subtitul wi">
                 <h2 class="subtitulo">WEB DEVELOPER</h2>
                 
             </div>
             <br><br>
         
-            <div class="contenedor-servicio1" >
+            <div class="contenedor-servicio1 " >
                 <h2 class="subtitulo2">Qui soc</h2>
                 
                     <img src="img/perfil.png" alt="" class="logo2">
@@ -84,11 +97,11 @@
                       </a>
                 </div>
             </div>
-            <div class="contenedor-servicio">
+            <div class="contenedor-servicio ">
                 
                 <img src="img/webdeveloper.svg" alt="" class="imgdev">
                 <img src="img/Gaming.svg" alt="" class="imgdev1">
-                <img src="img/music.PNG" alt="" class="imgdev2">
+                <img src="img/music2.PNG" alt="" class="imgdev2">
                 
                 <div class="quiensoy-servicio" >
                     <div class="service" >
@@ -110,10 +123,14 @@
             </div>   
         </section>
     </main>
-    <br><br><br>
+    <hr>
     <!--================== SKILLS ========================-->
-    <section class="contenedor" id="skills" >
-        <div class="fons-subtitul1" >
+    <main>
+
+    
+    <section class="contenedor " id="skills" >
+       <br>
+        <div class="fons-subtitul1 wi" >
             <h2 class="subtitulo">SKILLS</h2>
         </div>
         <br><br>
@@ -172,11 +189,14 @@
 
         </div>
     </section>
-    <br><br><br>
+</main>
+    <hr>
 
     <!--================== QUALIFICATION =================-->
-    <section class="qualification section" id="qualificacions">
-        <div class="fons-subtitul1" >
+    
+    <section class="qualification section " id="qualificacions">
+        <br>
+        <div class="fons-subtitul1 wi" >
             <h2 class="subtitulo">QUALIFICACIONS</h2>
         </div>
         <br>
@@ -205,13 +225,15 @@
             </div>
             
           </div>
-
+<br>
     </section>
 
-    <br>
+    <hr>
     <!--================= EXPERIENCIA LABORAL ============-->
-    <section class=" contenedor about-us" id="exp-laboral">
-        <div class="fons-subtitul3" >
+    <main>
+    <section class=" contenedor about-us " id="exp-laboral">
+       <br>
+        <div class="fons-subtitul3 wi" >
             <h2 class="subtitulo">EXPERIÈNCIA LABORAL</h2>
         </div>
 
@@ -295,42 +317,46 @@
         </div>
         
     </section>
-<br>
+</main>
+<hr>
     <!--================= FORM ==========================-->
-    
-    <section class="contenedor formulario" id="contacte">
-        
+    <main>
+    <section class="contenedor formulario " id="contacte">
+       <br>
             <h2 class="formu">Formulari de contacte</h2> <br>
         
             
-                <form class="formulari" action="https://formcarry.com/s/vLzVRIRee8y" target="_blank" method="post" id="myForm">
-                    <label for="fname">Nom:</label><br>
-                    <input type="text" id="name" name="fname" value="" required><br>
+             
 
-                    <label for="lname">Segon Cognom:</label><br>
-                    <input type="text" id="lastname" name="lname" value="" required><br>
-
-                    <label for="lname">Email:</label><br>
-                    <input type="email" id="mail" name="lname" value="" required><br>
-
-                    <label for="lname">telèfon:</label><br>
-                    <input type="tel" id="phone" name="lname" value="" placeholder="123-45-6780" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" required><br><br>
-
-                    
-                    <button class="btn btn-primary">Enviar</button>
-                </form>
-            
+                <div class="fons-form">
+                    <form class="formulari" action="https://formcarry.com/s/vLzVRIRee8y" target="_blank" method="post" id="myForm">
+                        <label for="fname">Nom:</label><br>
+                        <input type="text" id="name" name="fname" value="" required><br>
+    
+                        <label for="lname">Segon Cognom:</label><br>
+                        <input type="text" id="lastname" name="lname" value="" required><br>
+    
+                        <label for="lname">Email:</label><br>
+                        <input type="email" id="mail" name="lname" value="" required><br>
+    
+                        <label for="lname">telèfon:</label><br>
+                        <input type="tel" id="phone" name="lname" value="" placeholder="123-45-6780" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" required><br><br>
+    
+                        
+                        <button class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
             
         
         
 
-        <br>
+        <br><br>
 
     </section>
-    
+    </main>
 
     <!--=========== FOOTER ================-->
-
+<hr>
     <footer class="footer">
         
              <div class="contact-us">

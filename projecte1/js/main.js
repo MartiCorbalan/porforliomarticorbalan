@@ -10,17 +10,7 @@ let currentScrollPos = window.pageYOffset;
 }
 
 
-/*let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
-let semaforo = true;
-si el semaforo que en este caso es el icono del menu es true, estara en blanco, es decir el menu esta abierto, y si esta cerrado es decir false, sea negro
-document.querySelectorAll(".hamburguer")[0].addEventListener("click", function() {
-    if (semaforo) {
-        document.querySelectorAll(".hamburguer")[0].style.color = "#fff";
-        semaforo = false;
-    } else {
-        document.querySelectorAll(".hamburguer")[0].style.color = "#000";
-        semaforo = true;
-    }
-    enlacesHeader.classList.toggle("menudos")
-})
-*/
+document.querySelector('#hamburguer').onclick = function(){
+  document.querySelector('.nav_menu2').classList.toggle('menu-hidden');
+  /* document.querySelector('#navbar').style.height = '300px'; */
+}
